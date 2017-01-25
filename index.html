@@ -1,534 +1,1538 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-		<meta name="description" content="Flip Resume : A book style resume theme" />
-		<meta name="Chris Carnduff" content="Revolutionix" />
-		
-		<!-- Title -->
-		<title>Chris Carnduff | Systems Design Engineer</title>
-		
-		<!-- Favicon -->
-		<link href="images/favicon.ico" rel="shortcut icon"/> 
-		
-		<!-- Bootstrap Core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-		
-		<!-- Other CSS -->
-		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-		<link href="css/animate.css" rel="stylesheet" type="text/css">
-		<link href="css/simpletextrotator.css" rel="stylesheet" type="text/css" />
-		<link href="css/theme-loading-bar.css" rel="stylesheet" />
-		<link href='http://fonts.googleapis.com/css?family=Revalia%7COswald%7COpen+Sans+Condensed:300%7CRoboto' rel='stylesheet' type='text/css' />
-		
-		<!-- Custom CSS -->
-		<link href="css/theme.css" rel="stylesheet" type="text/css" />
-		<link href="css/bookblock.css" rel="stylesheet" type="text/css" />
-		
-		<!-- Default Colour CSS -->
-		<link id="theme-color" rel="stylesheet" type="text/css" href="css/theme-colors/Color_Scheme.css" />
-		
-		<!-- PreLoader -->
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/pace.js" type="text/javascript"></script>
-		
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-	</head>
-	<body>
-		<!-- Hides the complete page until window loads -->
-		<div class="cover"></div>
-		
-		<!-- container -->
-		<div class="container">
-			<header>
-				<!-- Main company header -->
-				<nav class="navbar navbar-default" role="navigation">
-				  <div class="container-fluid">
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-top">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					  </button>
-					  <!-- Top navigation buttons, visible only in extra small mode -->
-					  <a class="visible-xs bb-nav-prev navbar-brand navbar-brand-pagination" href="#"><i class="fa fa-angle-left"></i></a>
-					  <a class="visible-xs bb-nav-next navbar-brand navbar-brand-pagination" href="#"><i class="fa fa-angle-right"></i></a>
-					  <!-- /Top navigation buttons -->
-					  
-					</div>
-					<div id="nav-top" class="collapse navbar-collapse pageScrollerNav standardNav dark">
-					  <ul class="nav navbar-nav navbar-right" id="menu">
-						<li><a href="#"  data-page="1">Home</a></li>
-						<li><a href="#" data-page="2">About</a></li>
-						<li><a href="#" data-page="3">Education</a></li>
-						<li><a href="#" data-page="4">Experience</a></li>
-						<li><a href="#" data-page="5">Skills</a></li>
-						<li><a href="#" data-page="6">Portfolio</a></li>
-<!--						<li><a href="#" data-page="7">Contact</a></li>-->
-					  </ul>
-					</div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-			</header>
-			
-			<!-- Book style flip wrapper -->
-			<div class="bb-custom-wrapper">
-			  <div id="bb-bookblock" class="bb-bookblock">
-				<!-- bb-item represents a page in the resume.
-				 add or remove bb-item divs to add or remove pages.
-				-->
-				<!-- First page, your photo and title -->
-				  <div class="bb-item" id="page-0">
-					<div id="bb-first-page" class="bb-custom-side">
-					  <div class="row" id="first-page">
-              <div class="col-sm-12 text-center">
-                <div class="dp-box">
-                  <h1 class="hidden-sm hidden-xs"><img class="dp" id="dp" src="images/dp.jpg" alt="Display Picture" /> Chris Carnduff</h1>
-                  <div class="visible-xs visible-sm"><img class="dp" id="dp" src="images/dp.jpg" alt="Display Picture" /><h1>Chris Carnduff</h1></div>
-                </div>
-              </div>
-              <div class="col-xs-8 col-xs-offset-2 text-center">
-                <h2>
-                  Dedicated | Professional | Leader
-                </h2>
-                <p class="social-buttons">
-                  <a class="btn btn-circle" href="#"  onclick="location.href = 'https://ca.linkedin.com/in/chriscarnduff';"><i class="fa fa-linkedin"></i></a>
-    
-                <a  onClick="ClipBoard();" id="email-copy" class="btn btn-circle" href="#"><i class="fa fa-envelope"></i>
-                    <script>
-                        function ClipBoard() {
-                            holdtext= "Christopher.carnduff@uwaterloo.ca"
-                            Copied = hold
-                            Copied.execCommand("Copy");
-                        }
-                    </script>
-                    </a>
-                </p>
-                <p id="navigation-help">
-								  Use <i class="fa fa-arrow-left"></i> <i class="fa fa-arrow-right"></i> keys to navigate.
-								</p>
-              </div>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-					  </div>
-					</div>
-				  </div> <!-- /First page -->
-					
-					<!-- About -->
-					<div class="bb-item" id="page-1">
-						<div class="bb-custom-side">
-							<div class="bb-custom-container">
-								<h1 class="text-center"><span class="page-heading">Who Am I?</span></h1>
-								<div class="row content-block text-justify animateFadeInRight">
-									<div class="col-sm-2 col-sm-offset-2 text-center">
-										<img src="images/man.png" alt="man icon"/>
-									</div>
-									<div class="col-sm-6">
-										<p>I am currently enrolled in Systems Design Engineering at the University of Waterloo. I am always eager to learn new skills and improve my existing ones which is why I chose a program that would push me and connect me with like-minded people. My friends would describe me as outgoing, confident and motivated. I am a hardworking team player / leader with a positive attitude. I would describe myself as meticulous in the work I produce which is why I take pride in my finished products. A mentionable quote that I live by is “Strive not to be a success, but rather to be of value.” –Albert Einstein.</p>
-									</div>
-								</div>
-								<div class="row content-block text-justify animateFadeInLeft">
-									<div class="col-sm-2 col-sm-offset-2 col-sm-push-6 text-center">
-										<img src="images/joypad.png" alt="joypad icon"/>
-									</div>
-									<div class="col-sm-6 col-sm-pull-2">
-										<p>Music is something I value deeply. I enjoy playing and creating music as much as I enjoy listening to it. Last summer, I renovated my basement into a recording studio which became the hot spot for people to hang out and record music in the small town I grew up. I currently play Piano, Bass, Electric and Acoustic Guitar, a little bit of Drums and I can’t forget to mention, the Tambourine. To listen to some of the artists I’ve worked with, you can visit my Soundcloud channel: <a href="https://soundcloud.com/chriscar15">Carnduff Recordings</a>. The wide variety of music I listen to consists of Electronic, Hip Hop/ RnB, Rock, Indie and Country. Recently I’ve been listening to a band called The Arctic Monkeys - if you haven’t heard them yet, I suggest you give them a listen.</p>
-									</div>
-								</div>
-								<div class="row content-block content-block-last text-justify animateFadeInRight">
-									<div class="col-sm-2 col-sm-offset-2 text-center">
-										<img src="images/wine.png" alt="wine icon"/>
-									</div>
-									<div class="col-sm-6">
-										<p>My main goal in life is to see the world in it’s entirety. Digging my feet into every continent is something that I’ve been passionate about for as long as I can remember. Recently, my girlfriend and I flew to NYC to see the many great wonders of the modern world and it was unbelievable. Some of the places that I’ve been fortunate enough to visit thus far include: Ireland, Cuba, British Columbia, Halifax and Florida. I am hopeful that this list will grow within the near future.
-</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /About -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chris Carnduff</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
-					<!-- Education -->
-					<div class="bb-item" id="page-2">
-						<div class="bb-custom-side">
-							<div class="bb-custom-container">							
-								<h1 class="text-center"><span class="page-heading">Education</span></h1>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="blockquote-box blockquote-primary clearfix animateBounceInLeft">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> 2001 - 2010
-											</div>
-											<h2>Elementary School</h2>
-											<p class="text-justify">
-												Attended Monck Public School. Lead the student council and organized a trip to WE day by Free the Children in Toronto. Graduated with Principle's Leadership Award and spoke at the graduation ceremony as Valedictorian.
-											</p>
-										</div>
-										<div class="blockquote-box blockquote-success clearfix animateBounceInLeft">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> 2010 - 2015
-											</div>
-											<h2>High School</h2>
-											<p class="text-justify">
-												Graduated from Bracebridge and Muskoka Lakes Secondary School with Honours. Acted as head of student parliament final year. Organized school spirit days, Summer and Winter festivals, coffee houses and dances. Discovered a deep interest in all things science. Placed second in the Lion’s Club speaking competition. Spoke at the 2015 graduation ceremony as the Valedictorian. 
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" >
 
-											</p>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="blockquote-box blockquote-warning clearfix animateBounceInRight">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> 2015 - Present
-											</div>
-											<h2>University</h2>
-											<p class="text-justify">
-                       							Pursuing a Bachelor of Applied Science in Systems Design Engineering at the University of Waterloo. Learned object oriented C++, Solid Works 3D modeling software, user interface and experience design among other systems design practices. Designed the Aqua Bicylinder, a solution for transporting water long distances in rural areas of third world countries. 
-											</p>
-										</div>
-										<div class="blockquote-box blockquote-danger clearfix animateBounceInRight">
-											<div class="square pull-left">
-												<i class="fa fa-calendar"></i> Summer 2011
-											</div>
-											<h2>Others</h2>
-											<p class="text-justify">
-												Completed two courses in electron microscopy and game development at The University of Toronto’s DEEP (Da Vinci Engineering Enrichment Program) in 2011.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /Education -->
-					
-					<!-- Experience -->
-					<div class="bb-item" id="page-3">
-						<div class="bb-custom-side" id="experience">
-							<div class="bb-custom-container">
-								<h1 class="text-center"><span class="page-heading">Experience</span></h1>
-								<div class="row">
-									<div class="col-sm-6 animateFadeInUp">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i></i> Marks Clothing<img class="marks-logo" src="images/marks-logo.jpg"/></div>
-											<div class="panel-body">
-												Performed inventory management and handled customer issues which strengthend my abilities to work with and satisfy customers. I was also responsible for opening and closing the establishment as well as counting and vaulting the registers.
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/font/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/libs/materialize/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen,projection" />
 
-											</div>
-											<div class="panel-footer">Keyholder, from August 2013 to July 2015</div>
-										</div>
-									</div>
-                                    <div class="col-sm-6 animateFadeInDown">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i></i> Teranet <img class="marks-logo" src="images/teranet.png"/></div>
-											<div class="panel-body">
-Developed for the GeoWarehouse Modernization team reconstructing an Angular JS based web app that provides realtors with access to the Ontario Land Registry. Facilitated product feature meetings leading team discussions and ensuring time efficiency.
-											</div>
-                                            <div class="teranet-photo"><img src="images/teranet_group.jpg"/>
-                                            </div>
-											<div class="panel-footer">Software Developer, From January 2016 to April 2016</div>
-										</div>
-									</div>
-<!--
-									<div class="col-sm-6 animateFadeInUp">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i></i> Gagnon's Independent Grocer</div>
-											<div class="panel-body">
-												Jujubes fruitcake tiramisu liquorice chocolate cake. Carrot cake faworki donut soufflé oat cake tootsie roll. Fruitcake fruitcake cake sweet pie jelly beans. Chocolate cake candy jujubes.
-											</div>
-											<div class="panel-footer">Worked as web engineer, from August 2013 to July 2015</div>
-										</div>
-									</div>
--->
-								</div>
-								<div class="row">
-									<div class="col-sm-6 animateFadeInDown">
-										<div class="panel panel-default">
-											<div class="panel-heading"><i></i> Muskoka Custom Cleaning and Property Management</div>
-											<div class="panel-body">
-								                Maintained and landscaped upscale estates in the Muskoka Lakes region. Directed a team to supply a high quality service resulting in team and time management skills.
-  
-											</div>
-											<div class="panel-footer">Landscape Team Coordinator, From July 2015 to August 2015</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /Experience -->
-					
-					<!-- Skills -->
-					<div class="bb-item" id="page-4">
-						<div class="bb-custom-side">
-							<div class="bb-custom-container">
-								<h1 class="text-center"><span class="page-heading">Skills</span></h1>
-                <div class="row">        
-                  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="80">
-                        <span class="sr-only">70% Complete (success)</span>
+  <link rel="stylesheet" href="assets/css/animate.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/libs/sweetalert/sweet-alert.css" media="screen,projection" />
+
+  <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/libs/owl-carousel/owl.transitions.css" media="screen,projection" />
+  <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.css" media="screen,projection" />
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Choose your default colors -->
+  <link rel="stylesheet" href="assets/css/colors/color1.css">
+  <!-- <link rel="stylesheet" href="assets/css/colors/color2.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/colors/color3.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/colors/color4.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/colors/color5.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/colors/color6.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/colors/color7.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/colors/color8.css"> -->
+
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <!-- Preloader --> 
+    <div id="preloader">
+      <div class="loader">
+            <svg class="circle-loader" height="50" width="50">
+              <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6" stroke-miterlimit="10" />
+            </svg>
+        </div>    
+    </div><!--preloader end-->
+
+  <!-- Main Container -->
+  <main id="app" class="main-section">
+    <!-- header navigation start -->
+    <header id="navigation" class="root-sec white nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="nav-inner">
+              <nav class="primary-nav">
+                <div class="clearfix nav-wrapper">
+                  <a href="#home" class="left brand-logo menu-smooth-scroll" data-section="#home"><img src="images/logo.png" alt="">
+                  </a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                  <ul class="right static-menu">
+                    <li class="search-form-li">
+                      <a id="initSearchIcon" class=""><i class="mdi-action-search"></i> </a>
+                      <div class="search-form-wrap hide">
+                        <form action="#" class="">
+                          <input type="search" class="search">
+                          <button type="submit"><i class="mdi-action-search"></i>
+                          </button>
+                        </form>
                       </div>
-                      <span class="progress-type">Solid Works</span>
-                      <span class="progress-completed">80%</span>
+                    </li>
+                    <li>
+                      <a class="dropdown-button blog-submenu-init" href="#!" data-activates="dropdown1">
+                        <i class="mdi-navigation-more-vert right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="inline-menu side-nav" id="mobile-demo">
+
+                  <!-- Mini Profile // only visible in Tab and Mobile -->
+                    <li class="mobile-profile">
+                     <div class="profile-inner">
+                        <div class="pp-container">
+                            <img src="images/person.png" alt="">
+                        </div>
+                        <h3>John Doe</h3>
+                        <h5>Creative UI/UX Expert</h5>
+                      </div>
+                    </li><!-- mini profile end-->
+
+
+                    <li><a href="#about" data-section="#about" class="menu-smooth-scroll"><i class="fa fa-user fa-fw"></i>About Me</a>
+                    </li>
+                    <li><a href="#resume" data-section="#resume" class="menu-smooth-scroll"><i class="fa fa-file-text fa-fw"></i>Resume</a>
+                    </li>
+                    <li><a href="#portfolio" data-section="#portfolio" class="menu-smooth-scroll"><i class="fa fa-briefcase fa-fw"></i>Portfolio</a>
+                    </li>
+                    <li><a href="#team" data-section="#team" class="menu-smooth-scroll"><i class="fa fa-users fa-fw"></i>Team</a>
+                    </li>
+<!--
+                    <li><a href="#testimonial" data-section="#testimonial" class="menu-smooth-scroll"><i class="fa fa-comments fa-fw"></i>Testimonial</a>
+                    </li>
+-->
+<!--
+                    <li><a href="#blog" data-section="#blog" class="menu-smooth-scroll"><i class="fa fa-pencil fa-fw"></i>Blog</a>
+                    </li>
+-->
+                    <li><a href="#contact" data-section="#contact" class="menu-smooth-scroll"><i class="fa fa-paper-plane fa-fw"></i>Contact</a>
+                    </li>
+                  </ul>
+                  <ul id="dropdown1" class="inline-menu submenu-ul dropdown-content">
+                    <li>Home</li>
+                    <li><a href="blog.html">All Blog</a>
+                    </li>
+                    <li><a href="blog-with-sidebar.html">Blog with Sidebar</a>
+                    </li>
+                    <li><a href="single.html">Single Blog</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .container end -->
+    </header>
+    <!-- #header  navigation end -->
+
+    <!-- Home Section start -->
+    <section id="home" class="scroll-section root-sec grey lighten-5 home-wrap">
+      <div class="sec-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="home-inner">
+                  <div class="center-align home-content">
+                    <h1 class="home-title">HI! I'm <span>Chris Carnduff</span></h1>
+                    <h2 class="home-subtitle">A design driven tech enthusiast 
+</h2>
+                    <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Hire Me <i class="mdi-content-send left"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container end -->
+        <div class="section-call-to-area">
+          <div class="container">
+            <div class="row">
+              <a href="#about" class="btn-floating btn-large button-middle call-to-about section-call-to-btn animated btn-up btn-hidden" data-section="#about">
+                <i class="mdi-navigation-expand-more"></i>
+              </a>
+            </div>
+          </div>
+          <!-- .container end -->
+        </div>
+      </div>
+    </section>
+    <!-- #home Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="scroll-section root-sec padd-tb-60 grey lighten-5 about-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix about-inner">
+
+            <div class="col-sm-12 col-md-4">
+              <div class="person-about">
+                <h3 class="about-subtitle">About Me</h3>
+                <p>Hey! Thanks for visiting my portfolio website. <br> My name is Chris and I'm a student at the University of Waterloo studying Systems Design Engineering. I have gained considerable technical experience from software development to UI/UX design through internships. I have found a passion for the product development process related to the tech industry.
+
+               </p>
+                <a href="images/resume.pdf" target="_blank" class="waves-effect waves-light btn-large brand-bg white-text"><i class="mdi-content-archive left"></i> Download Resume</a>
+              </div>
+            </div>
+            <!-- about me description -->
+
+            <div class="col-sm-6 col-md-4">
+              <div class="person-img wow fadeIn">
+                <img class="z-depth-1" src="images/person.png" alt="">
+              </div>
+            </div>
+            <!-- about me image -->
+
+            <div class="col-sm-6 col-md-4">
+              <div class="person-info">
+                <h3 class="about-subtitle">Personal Information</h3>
+                  <h5><span>Name :</span> Chris Carnduff</h5>
+                <h5><span>Email :</span> cacarndu@edu.uwaterloo.ca</h5>
+                <h5><span>Address :</span> Waterloo Ontario, Canada</h5>
+              </div>
+
+              <div class="about-social">
+                <ul>
+<!--
+                  <li>
+                    <a href="#" class="btn-floating waves-effect waves-light white"><i class="fa fa-facebook"></i></a>
+                  </li>
+-->
+<!--
+                  <li>
+                    <a href="#" class="btn-floating waves-effect waves-light white"><i class="fa fa-twitter"></i></a>
+                  </li>
+-->
+<!--
+                  <li>
+                    <a href="#" class="btn-floating waves-effect waves-light white"><i class="fa fa-google-plus"></i></a>
+                   </li>
+-->
+                  <li>
+                    <a href="https://www.linkedin.com/in/chriscarnduff/" class="btn-floating waves-effect waves-light white"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- about me info -->
+
+          </div>
+        </div>
+      </div>
+      <!-- .container end -->
+    </section>
+    <!-- #about Section end -->
+
+    <!-- Resume Section start -->
+    <section id="resume" class="scroll-section ">
+      <section id="skill" class="root-sec white skill-wrap">
+      <div class="sec-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="clearfix skill-inner">
+              <div class="col-sm-12 col-md-3">
+                <div class="skill-left">
+                  <h2 class="title">Skills</h2>
+                  <p class="regular-text">These are my technical skills relative to one another. They range from 3D model and user interface design to software development. <br> I am also very interpersonal and more importantly have acquired skills in communication and a thorough understanding of good work flow organization and efficiency.</p>
+                </div>
+              </div>
+
+              <!-- skills container -->
+              <div class="col-sm-12 col-md-6 col-md-offset-1">
+                <div class="skill-right">
+                  <div id="skillSlider" class="clearfix skill-graph">
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="90%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">Photoshop</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">90%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="95"></div>
-                      <span class="progress-type">Javascript</span>
-                      <span class="progress-completed">95%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="80%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">JavaScript</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">80%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="15"></div>
-                      <span class="progress-type">Java</span>
-                      <span class="progress-completed">15%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="90%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">Illustrator</span>
+                              <div class="hr-wrap">
+
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">90%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="80"></div>
-                      <span class="progress-type">C++</span>
-                      <span class="progress-completed">80%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="100%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">HTML</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">100%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" data-transitiongoal="90"></div>
-                      <span class="progress-type">Html / CSS / LESS</span>
-                      <span class="progress-completed">90%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="60%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">Arduino</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">60%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="20"></div>
-                      <span class="progress-type">IOS / Swift</span>
-                      <span class="progress-completed">20%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="90%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">CSS</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">90%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="90"></div>
-                      <span class="progress-type">Illustrator</span>
-                      <span class="progress-completed">90%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="70%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">C++</span>
+                              <div class="hr-wrap">
+
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">70%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="90"></div>
-                      <span class="progress-type">Photoshop</span>
-                      <span class="progress-completed">90%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="60%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">Swift & iOS Dev</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">60%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="75"></div>
-                      <span class="progress-type">Angular JS</span>
-                      <span class="progress-completed">75%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="50%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">React</span>
+                              <div class="hr-wrap">
+
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">50%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" data-transitiongoal="95"></div>
-                      <span class="progress-type">Communication</span>
-                      <span class="progress-completed">95%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="70%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">Sketch</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">70%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" data-transitiongoal="95"></div>
-                      <span class="progress-type">Team Work Ability</span>
-                      <span class="progress-completed">95%</span>
+                    <!-- /single skill-->
+                      <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="85%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">Solidworks</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">85%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" data-transitiongoal="95"></div>
-                      <span class="progress-type">Organization</span>
-                      <span class="progress-completed">95%</span>
+                    <!-- /single skill-->
+                        <!-- single skill -->
+                    <div class="single-skill">
+                      <div class="after-li">
+                        <div class="singel-hr">
+                          <div class="singel-hr-inner" data-height="90%">
+                            <div class="skill-visiable">
+                              <span class="skill-title">Git</span>
+                              <div class="hr-wrap">
+                                <div class="hrc"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="skill-count">90%</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" data-transitiongoal="75"></div>
-                      <span class="progress-type">Protractor Test Automation </span>
-                      <span class="progress-completed">75%</span>
+                    <!-- /single skill-->
+
+                    <!-- single skill -->
+                  </div>
+                </div>
+              </div>
+              <!-- /skills container -->
+            </div>
+          </div>
+          <div class="btn-wrapp skl-ctrl">
+            <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-left"><i class="mdi-navigation-chevron-left "></i></a>
+            <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-right"><i class="mdi-navigation-chevron-right "></i></a>
+          </div>
+        </div>
+      </div>
+        <!-- .container end -->
+      </section>
+
+      <section id="experience" class="root-sec padd-tb-120 brand-bg experience-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="experience-inner">
+              <div class="col-sm-12 col-md-10 card-box-wrap">
+                <div class="row">
+                  <div class="clearfix section-head experience-text">
+                    <div class="col-sm-12">
+                      <h2 class="title">Experience</h2>
+                      <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="overflow-hidden">
+                      <div class="row">
+                        <div id="experienceSlider" class="clearfix card-element-wrapper">
+                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">Sept 2016 - December 2016</h2>
+                                <div class="valign-wrapper card-img-wrap">
+                                  <img class="activator" src="images/rave-logo.png" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">UX/UI Designer & iOS Developer<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Rave</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">Front End Software Developer<i class="mdi-navigation-close right"></i></span>
+                                  <p>Rave</p>
+                                </div>
+                                <p class="rev-content">
+                                  • Improved the user experience for a mobile app through user testing assesments. <br>• Designed features for the mobile app as well as iMessage extension app. <br> • Represented and built connections for the company by attending startup events and conferences. <br> • Developed features for the iOS platform such as Twitter authenication and Viki, a netflix like video platform for the app.
+
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">January 2016 - May 2016</h2>
+                                <div class="valign-wrapper card-img-wrap">
+                                  <img class="activator" src="images/teranet-logo.png" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">Front End Software Developer<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Teranet inc.</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">Front End Software Developer<i class="mdi-navigation-close right"></i></span>
+                                  <p>Teranet inc.</p>
+                                </div>
+                                <p class="rev-content">
+                                  • Developed for the GeoWarehouse Modernization team reconstructing an Angular JS based web app that provides realtors with access to the Ontario Land Registry. <br> • Facilitated product feature meetings leading team discussions and ensuring time efficiency. 
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">August 2013 - June 2015</h2>
+                                <div class="valign-wrapper card-img-wrap">
+                                  <img class="activator" src="images/marks-logo.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">Keyholder<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Marks</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">Keyholder<i class="mdi-navigation-close right"></i></span>
+                                  <p>Marks</p>
+                                </div>
+                                <p class="rev-content">
+                                  • Performed inventory management and handled customer issues which strengthend my abilities to work with and satisfy customers. <br> • I was also responsible for opening and closing the establishment as well as counting and vaulting the registers. 
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+<!--
+                          <div class="col-sm-4 cold-xs-12 single-card-box">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">January 2014 - Present</h2>
+                                <div class="valign-wrapper card-img-wrap">
+                                  <img class="activator" src="http://placehold.it/400x300" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Windows Phone</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
+                                  <p>Windows Phone</p>
+                                </div>
+                                <p class="rev-content">
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 cold-xs-12 single-card-box">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">January 2014 - Present</h2>
+                                <div class="valign-wrapper card-img-wrap">
+                                  <img class="activator" src="http://placehold.it/400x300" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Windows Phone</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">UX/UI Designer<i class="mdi-navigation-close right"></i></span>
+                                  <p>Windows Phone</p>
+                                </div>
+                                <p class="rev-content">
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+-->
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">        
-                  <div class="col-xs-12 col-sm-8 col-sm-offset-2 animateFadeInUp">
-                    <div class="well">
-                      <h3>Professional Abilities</h3>
-                      <ul>
-                        <li>Prominent communication and interpersonal skills acquired from working at Marks Clothing</li>
-                        <li>Passionate about team work, strong capacity of understanding new concepts, self-motivated and work well in demanding environments</li>
-                        <li>Strong organization and leadershop skills obtained from the position of Prime Minister of student parliament as well as leading scrum meetings at Teranet</li>
+              </div>
+              <div class="btn-wrapp exp-ctrl">
+                <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+                <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="root-sec grey lighten-5 padd-tb-120 education-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="education-inner">
+              <div class="col-sm-12 col-md-10 card-box-wrap">
+                <div class="row">
+                  <div class="clearfix section-head education-text">
+                    <div class="col-sm-12">
+                      <h2 class="title">education</h2>
+                      <p class="regular-text">Currently perusing a B.ASc in Systems Design Engineering at the University of Waterloo. Systems Design Engineering provides the fundamental skills and knowledge required to be an engineer but focuses on the integration and design aspects required for a full overview of a project. </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="overflow-hidden">
+                      <div class="row">
+                        <div id="educationSlider" class="clearfix card-element-wrapper">
+
+                        <!-- single education -->
+                          <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">2015 - 2020</h2>
+                                <div class="card-img-wrap">
+                                  <img class="activator" src="images/uwaterloo-logo.png" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">Systems Design Engineering<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>University of Waterloo</p>
+                              </div>
+                              <!-- Reveal content-->
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">Systems Design Engineering<i class="mdi-navigation-close right"></i></span>
+                                  <p>University of Waterloo</p>
+                                </div>
+                                <p class="rev-content">
+                                    • Class academic representitive. <br> • Some courses include: <br> C++ Programming <br> Design process <br> Digital Systems <br> 3D Design <br> Economics <br> General engineering courses (Calculus, Physics, linear algebra, chemistry)
+                                </p>
+                              </div>
+                            </div>
+                          </div> <!-- single education end -->
+
+                          <!-- single education -->
+<!--
+                          <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">2005 - 2007</h2>
+                                <div class="card-img-wrap">
+                                  <img class="activator" src="http://placehold.it/400x300" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">Bachelor of Science<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Oxford University</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">Bachelor of Science<i class="mdi-navigation-close right"></i></span>
+                                  <p>Oxford University</p>
+                                </div>
+                                <p class="rev-content">
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                                </p>
+                              </div>
+                            </div>
+                          </div>  single education 
+-->
+
+                        <!-- single education -->
+<!--
+                          <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">2005 - 2007</h2>
+                                <div class="card-img-wrap">
+                                  <img class="activator" src="http://placehold.it/400x300" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">A Level<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Oxford College</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">A Level<i class="mdi-navigation-close right"></i></span>
+                                  <p>Oxford College</p>
+                                </div>
+                                <p class="rev-content">
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                                </p>
+                              </div>
+                            </div>
+                          </div>  single education 
+-->
+
+                        <!-- single education -->
+<!--
+                          <div class="col-sm-4 single-card-box">
+                            <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                                <h2 class="left-align card-title-top">1995 - 2005</h2>
+                                <div class="card-img-wrap">
+                                  <img class="activator" src="http://placehold.it/400x300" alt="">
+                                </div>
+                              </div>
+                              <div class="card-content">
+                                <span class="card-title activator brand-text">O Level<i class="mdi-navigation-more-vert right"></i></span>
+                                <p>Oxford School</p>
+                              </div>
+                              <div class="card-reveal">
+                                <div class="rev-title-wrap">
+                                  <span class="card-title activator brand-text">O Level<i class="mdi-navigation-close right"></i></span>
+                                  <p>Oxford School</p>
+                                </div>
+                                <p class="rev-content">
+                                  Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                                </p>
+                              </div>
+                            </div>
+                          </div>  single education 
+-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!--
+              <div class="btn-wrapp edu-ctrl">
+                <a class="btn-floating waves-effect waves-light btn-large brand-bg go go-left"><i class="mdi-navigation-chevron-left"></i></a>
+                <a class="btn-floating waves-effect waves-light btn-large brand-bg go go-right"><i class="mdi-navigation-chevron-right"></i></a>
+              </div>
+-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- #resume Section end -->
+
+    <!-- Portfolio Section start -->
+    <section id="portfolio" class="scroll-section root-sec white portfolio-wrap">
+      <div class="padd-tb-120 brand-bg portfolio-top">
+        <div class="portfolio-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="title">PORTFOLIO</h2>
+<!--
+                <ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">
+                  <li class="active"><a href="#" data-target="*">All</a>
+                  </li>
+                  <li><a href="#" data-target=".category-1">Art</a>
+                  </li>
+                  <li><a href="#" data-target=".category-2">Accessories</a>
+                  </li>
+                  <li><a href="#" data-target=".category-3">Design</a>
+                  </li>
+                  <li><a href="#" data-target=".category-4">Fashion</a>
+                  </li>
+                </ul>
+-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .container end -->
+      </div>
+      <div id="portfolioModal" class="modal white">
+        <div class="model-img"></div>
+        <div class="modal-content">
+          <h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>
+          <p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior.</p>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Website</a>
+          <a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>
+        </div>
+      </div>
+
+      <div class="portfolio-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="clearfix protfolio-item" id="protfolio-msnry">
+              
+              <!-- Single Portfolio-->
+                <li class="single-port-item category-1 category-3">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/valkyrie-photos.jpg" data-title="Valkyrie Labs - Co-founder & COO" data-content="At Valkyrie Labs we are developing a unique imaging tool and software suite that will allow users of any experience level to generate 3D models of indoor environments. This will be an easy utility to use yet extremely modular and powerful in terms of it’s end user functionality. We believe that products sell, but tools make a lasting impact. Our mission is to develop a solution that could be used in a vast range of applications from research and education to law enforcement and search & rescue.
+" data-demo-link="http://valkyrielabs.ca"> <!-- Portfolio pop-up content-->
+                    <div class="protfolio-image">
+                      <img src="images/valkyrie-cam.jpg" alt="portfolio"> <!-- portfolio thumbnail-->
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Valkyrie Labs</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-2 category-1">
+                  <a href="#portfolioModal2" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/bubble-photos.jpg" data-title="Bubble iOS App" data-content="Bubble is a social media app that is currently in early development. This app allows you to share content in unique dynamic ways by combining factors of current popular social media. The concept cannot be disclosed though here are some photos of the User interface that I have designed.
+" >
+                    <div class="protfolio-image">
+                      <img src="images/bubble-logo.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Bubble</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-1 category-2">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/snaptrax-photos.jpg" data-title="Snaptrax - NHacks 2016" data-content="Snaptrax was created at the NHacks hackathon in London Ontario. The site takes an image URL and analyze the contents of the image using artificial intelligence image processing to match it with a song. The idea came from the many memories that I can associate with specific songs. I wanted a way to match my photos with a new song. Other applications that our team had discussed if the project were to continue would include matching music with videos or presentations for commercial use. A few features that didn't get finished include:
+
+A feed of recent photo's that have been snaptracked by users,
+A means to upload and store photos from users,
+ and A more complex and accurate matching process. Note this is no longer supported thought an offline version can be seen with the WEBSITE button. " data-demo-link="snaptrax/index.html">
+                    <div class="protfolio-image">
+                      <img src="images/snaptrax.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Snaptrax</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-3">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/aquabicylinder-photos.jpg" data-title="Aqua Bicylinder" data-content="The group project was created as a final project in the Systems Design Introduction to Design (SYDE 161). In this course we learned about the techniques and processes to creating an effective design to a given solution. The final project was completed over the term, the idea was to create a solution in a third world country that will enhance transportation, health, or resources. 
+A solution must be created to reduce the negative physical health effects caused by transporting water, as well as the time spent in transport. This solution should be a design that will reduce the time spent fetching water each day by women and children by 75% to allow time for other more productive tasks, and must not require the user to carry heavy objects above the ground. 
+Throughout this project a low-fidelity, medium-fidelity, and high-fidelity prototypes were created. To justify the groups choice of final design, a final report was created which included many justifications such as; situation of concern (SOC), Quality Function Deployment Chart (QFD), Functions-Means Chart, Morphological chart, and Function Breakdown. Click WEBSITE to see the composition video." data-demo-link="https://www.youtube.com/embed/9eBJzZ_8eOc">
+                    <div class="protfolio-image">
+                      <img src="images/aquabicylinder.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Aqua Bicylinder</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+                <li class="single-port-item category-1 category-3 category-4">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="images/pongtable-photos.jpg" data-title="Arduino Pong Table" data-content="We created an electronic pong table for our culminating Digital Systems class. We used 3 Arduino micro controllers to drive the different functions. The table is able to detect different light sensitivities over top of each cup to produce the score for each player on an LCD screen. Equipped to the table are 2 buttons. Each player assigned button is pressed when a player finishes their turn. This controls a clock similar to a chess clock. The player with the best time and fewest cups wins the game. A third button is attached to reset the score clock once the game is finished. To see a video, press the WEBSITE button. 
+" data-demo-link="https://www.youtube.com/watch?v=1u9afSSVIUg">
+                    <div class="protfolio-image">
+                      <img src="images/electric-pong.jpg" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">Arduino Pong Table</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ single portfolio -->
+
+                <!-- Single Portfolio-->
+<!--
+                <li class="single-port-item category-2 category-4">
+                  <a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">
+                    <div class="protfolio-image">
+                      <img src="http://placehold.it/390x280" alt="portfolio">
+                      <div class="protfolio-content waves-effect waves-block waves-light">
+                        <div class="protfolio-content__inner">
+                          <h2 class="p-title">item name</h2>
+                        </div>
+                      </div>
+                      <div class="p-overlay"></div>
+                    </div>
+                  </a>
+                </li>
+-->
+                <!--/ single portfolio -->
+
+              </ul>
+              <!-- portfolio load more button-->
+<!--              <a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light brand-bg"><i class="mdi-content-add"></i></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #portfolio Section end -->
+
+    <!-- Team Section end -->
+    <section id="team" class="scroll-section root-sec brand-bg padd-tb-120 team-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="clearfix team-inner">
+            <div class="col-sm-12 col-md-10 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head team-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">Meet the team</h2>
+<!--                    <p class="regular-text">Our Team combines a unique combination of creativity, experience, knowledge but most of all a shared 'can do' attitude to help clients get the very best support, advice and project management to achieve business goals.</p>-->
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="overflow-hidden">
+                    <div class="row">
+                      <div id="teamSlider" class="clearfix card-element-wrapper">
+                        <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/volunteer.png" alt="">
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Volunteer</span>
+                              <p></p>
+                            </div>
+<!--
+                            <div class="card-reveal">
+                              <div class="rev-title-wrap">
+                                <span class="card-title activator brand-text">Jonh Doe<i class="mdi-navigation-close right"></i></span>
+                                <p>UX UI Designer</p>
+                              </div>
+                              <p class="rev-content">
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                              </p>
+                            </div>
+-->
+                          </div>
+                        </div> <!-- single team member -->
+                        <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/skier.png" alt="">
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Professional Freestyle Skier</span>
+                              <p></p>
+                            </div>
+<!--
+                            <div class="card-reveal">
+                              <div class="rev-title-wrap">
+                                <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-close right"></i></span>
+                                <p>Front End Developer</p>
+                              </div>
+                              <p class="rev-content">
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                              </p>
+                            </div>
+-->
+                          </div>
+                        </div> <!-- single team member -->
+<!--
+                        <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="http://placehold.it/300x280" alt="">
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-more-vert right"></i></span>
+                              <p>Front End Developer</p>
+                            </div>
+                            <div class="card-reveal">
+                              <div class="rev-title-wrap">
+                                <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-close right"></i></span>
+                                <p>Front End Developer</p>
+                              </div>
+                              <p class="rev-content">
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                              </p>
+                            </div>
+                          </div>
+                        </div>  single team member 
+-->
+<!--
+                        <div class="col-sm-4 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="http://placehold.it/300x280" alt="">
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-more-vert right"></i></span>
+                              <p>Front End Developer</p>
+                            </div>
+                            <div class="card-reveal">
+                              <div class="rev-title-wrap">
+                                <span class="card-title activator brand-text">Letizia Toye<i class="mdi-navigation-close right"></i></span>
+                                <p>Front End Developer</p>
+                              </div>
+                              <p class="rev-content">
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                              </p>
+                            </div>
+                          </div>
+                        </div>  single team member 
+-->
+<!--
+                        <div class="col-sm-4 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="http://placehold.it/300x280" alt="">
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-more-vert right"></i></span>
+                              <p>Team Manager</p>
+                            </div>
+                            <div class="card-reveal">
+                              <div class="rev-title-wrap">
+                                <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-close right"></i></span>
+                                <p>Team Manager</p>
+                              </div>
+                              <p class="rev-content">
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                              </p>
+                            </div>
+                          </div>
+                        </div>  single team member 
+-->
+<!--
+                        <div class="col-sm-4 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="http://placehold.it/300x280" alt="">
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-more-vert right"></i></span>
+                              <p>Team Manager</p>
+                            </div>
+                            <div class="card-reveal">
+                              <div class="rev-title-wrap">
+                                <span class="card-title activator brand-text">Tandi Battle<i class="mdi-navigation-close right"></i></span>
+                                <p>Team Manager</p>
+                              </div>
+                              <p class="rev-content">
+                                Collaboratively initiate collaborative schemas for high-quality communities. Objectively create sticky relationships via team building outsourcing. 
+                              </p>
+                            </div>
+                          </div>
+                        </div>  single team member 
+-->
+                      </div> <!-- #teamSlider end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--
+            <div class="btn-wrapp tmu-ctrl">
+              <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+              <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+            </div>
+-->
+          </div>
+        </div>
+
+      </div> <!-- .container -->
+    </section>
+    <!-- #team Section end -->
+
+    <!-- Funfacts Section end -->
+<!--
+    <section id="funfacts" class="root-sec grey lighten-5 funfact-wrap">
+    <div class="sec-inner padd-tb-120">
+      <div class="container">
+        <div class="row">
+          <div class="funfact-inner">
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="mdi-editor-insert-emoticon"></i>
+                      <span class="num countNumb">150</span>
+                    </div>
+                    <div class="context">Happy clients</div>
+                  </div>
+                </div>
+              </div>
+            </div>  ./single fun fact box 
+-->
+<!--
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="mdi-action-wallet-travel"></i>
+                      <span class="num countNumb">230</span>
+                    </div>
+                    <div class="context">Project Completed</div>
+                  </div>
+                </div>
+              </div>
+            </div>  ./single fun fact box 
+-->
+<!--
+            <div class="col-sm-4 funfact-box">
+              <div class="center-align card-panel white">
+                <div class="feature-box-outer">
+                  <div class="funfact-box-inner">
+                    <div class="clearfix ">
+                      <i class="mdi-action-wallet-giftcard"></i>
+                      <span class="num countNumb">79</span>
+                    </div>
+                    <div class="context">Award Won</div>
+                  </div>
+                </div>
+              </div>
+            </div>  ./single fun fact box 
+-->
+<!--
+          </div>
+        </div>
+
+      </div>   .container end 
+-->
+<!--
+    </div>
+    </section>
+-->
+    <!-- #funfacts Section end -->
+
+    <!-- Testimonial Section end -->
+<!--
+    <section id="testimonial" class="scroll-section root-sec brand-bg padd-tb-120 testimonial-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="testimonial-inner">
+            <div class="col-sm-12 col-md-10 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head testimonial-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">testimonial</h2>
+                    <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="overflow-hidden">
+                    <div class="row">
+                      <div id="testimonialSlider" class="clearfix card-element-wrapper">
+                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatar.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div> 
+                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatar.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div> 
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatar.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatar.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div> 
+                        <div class="col-sm-6 single-card-box">
+                          <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-img-wrap">
+                                <img class="activator" src="images/avatar.png" alt="">
+                                <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator brand-text">Jonh Smith -</span>
+                              <a href="#">CEO, Apple Inc</a>
+                            </div>
+                          </div>
+                        </div> 
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapp tmo-ctrl">
+              <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+              <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+-->
+    <!-- #testimonial Section end -->
+
+    <!-- Blog Section end -->
+<!--
+    <section id="blog" class="scroll-section root-sec grey lighten-5 padd-tb-120 blog-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="blog-inner">
+            <div class="col-sm-12 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head blog-text">
+                  <div class="col-sm-10">
+                    <h2 class="title">Blog</h2>
+                    <p class="regular-text">A Web page that serves as a publicly accessible personal journal for an individual. Typically updated daily, blogs often reflect the personality of the author.</p>
+                  </div>
+                </div>
+                <div class="clearfix card-element-wrapper" id="blog-posts">
+                  <article class="col-sm-6 col-md-4 single-card-box single-post">
+                    <div class="card wow fadeInUpSmall" data-wow-duration=".7s">
+                      <div class="card-image">
+                        <div class="card-img-wrap">
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                            <a href="single.html"><img class="activator" src="http://placehold.it/350x200" alt="">
+                            </a>
+                          </div>
+                          <div class="post-body">
+                            <a href="single.html" class="post-title-link brand-text"><h2 class="post-title">Awesome Post Title</h2></a>
+                            <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix card-content">
+                        <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">15</span></a>
+                        <a href="single.html" class="brand-text right waves-effect">Read More</a>
+                      </div>
+                    </div>
+                  </article>  ./single blog post end 
+                  <article class="col-sm-6 col-md-4  single-card-box single-post">
+                    <div class="card wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                      <div class="card-image">
+                        <div class="card-img-wrap">
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                            <a href="single.html"><img class="activator" src="http://placehold.it/350x200" alt="">
+                            </a>
+                          </div>
+                          <div class="post-body">
+                            <a href="single.html" class="post-title-link brand-text"><h2 class="post-title">An Image Post</h2></a>
+                            <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix card-content">
+                        <a href="#" class="left js-favorite active" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">23</span></a>
+                        <a href="single.html" class="brand-text right waves-effect">Read More</a>
+                      </div>
+                    </div>
+-->
+                    <!-- ./single blog post end -->
+<!--
+                  </article> 
+                  <article class="col-sm-6 col-md-4 single-card-box single-post">
+                    <div class="card wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration=".7s">
+                      <div class="card-image">
+                        <div class="card-img-wrap">
+                          <div class="blog-post-thumb waves-effect waves-block waves-light">
+                            <a href="single.html"><img class="activator" src="http://placehold.it/350x200" alt="">
+                            </a>
+                          </div>
+                          <div class="post-body">
+                            <a href="single.html" class="post-title-link brand-text"><h2 class="post-title">Another Image Post</h2></a>
+                            <p class="post-content">In consectetuer turpis ut velit. Sed lectus. Ut varius tincidunt libero. Vivamus euismod mauris. Vestibulum fringilla pede sit amet augue. Ut varius tincidunt libero. Pellentesque dapibus hendrerit tortor. </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix card-content">
+                        <a href="#" class="left js-favorite" title="Love this"><i class="mdi-action-favorite"></i><span class="numb">17</span></a>
+                        <a href="single.html" class="brand-text right waves-effect">Read More</a>
+                      </div>
+                    </div>
+                  </article>  ./single blog post end 
+-->
+<!--
+                </div>
+                <div class="clearfix left-align">
+                  <div class="col-sm-12">
+                    <a href="blog.html" class="waves-effect waves-light btn-large load-more">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  ./container 
+-->
+<!--    </section>-->
+    <!-- #blog Section end -->
+
+    <!-- Contact Section end -->
+    <section id="contact" class="scroll-section root-sec brand-bg padd-tb-120 contact-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="contact-inner">
+            <div class="col-sm-12 card-box-wrap">
+              <div class="row">
+                <div class="clearfix section-head contact-text">
+                  <div class="col-sm-12">
+                    <h2 class="title">Contact</h2>
+                    <p class="regular-text">200 University Ave, University of Waterloo</p>
+                    <ul class="clearfix contact-info">
+                      <li><a href="">705-706-3532</a>
+                      </li>
+                      <li><a href="">cacarndu@edu.uwaterloo.ca</a>
+                      </li>
+                      <li><a href="">www.ChrisCarnduff.com</a>
+                      </li>
                     </ul>
-                    </div>
                   </div>
+                </div> <!-- contact text end -->
+
+                <div class="clearfix contact-form">
+
+                <!-- Map Start -->
+<!--
+                  <div class="col-sm-7">
+                    <div class="map-wrapper">
+                      <div id="map"></div>
+                    </div>
+                  </div>  Map end 
+-->
+
+                <!-- Contact Form start -->
+<!--
+                  <div class="col-sm-5">
+                    <div class="clearfix card-panel grey lighten-5 cform-wrapper">
+                      <form action="#" id="contactForm" novalidate>
+                        <div class="input-field">
+                          <input id="contact_name" type="text" name="contactName" class="validate input-box">
+                          <label for="contact_name" class="input-label">Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="email" type="email" name="contactEmail" class="validate input-box">
+                          <label for="email" class="input-label">Email</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="subject" type="text" name="contactSubject" class="validate input-box">
+                          <label for="subject" class="input-label">Subject</label>
+                        </div>
+                        <div class="input-field textarea-input">
+                          <textarea id="textarea1" name="contactMessage" class="validate materialize-textarea" style="height: 22px;"></textarea>
+                          <label for="textarea1" class="input-label">Message</label>
+                        </div>
+                        <div class="input-field submit-wrap clearfix">
+                          <button type="submit" class="left waves-effect btn-flat brand-text submit-btn">send message</button>
+                          <div class="right form-loader-area">
+                            <svg class="circular size-20" height="20" width="20">
+                              <circle class="path" cx="10" cy="10" r="7" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                            </svg>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>  ./contact form end 
+-->
                 </div>
-							</div>
-						</div>
-					</div>
-					<!-- /Skills -->
-					
-					<!-- Portfolio -->
-					<div class="bb-item" id="page-5">
-						<div class="bb-custom-side" id="portfolio">
-							<div class="bb-custom-container">
-								<h1 class="text-center"><span class="page-heading">Portfolio</span></h1>
-                                    <div class="row">        
-                                      <div class="col-xs-12 col-sm-8 col-sm-offset-2 animateFlipInX">
-                                        <div class="well">
-                                          <h3>Aqua Bicylinder</h3>
-                                          <p>The Aqua Bicylinder is a design solution that provides people in rural Africa with a method to transport large amounts of clean drinking water from a distant source. The device consists of a large removable barrel that attaches to the rear of a bicycle to prevent physical stress on the user. This is superior to the current solution where children and women are required to walk up to 7 km with 25-litre jerry cans causing physical injury and other complications. The design also decreases the amount of time required to collect water allowing the women and children who typically hold this responsibility to attend school or work to provide food for their family.                     
-                                        </p>
-                                        <p class="aqua-video">
-                                        <iframe class="aqua-video" width="560" height="315" src="https://www.youtube.com/embed/9eBJzZ_8eOc" frameborder="0" allowfullscreen></iframe>    
-                                        </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                <div class="row">        
-                                      <div class="col-xs-12 col-sm-8 col-sm-offset-2 animateFlipInX">
-                                        <div class="well">
-                                          <h3>Snaptrax</h3>
-                                          <p>Snaptrax was created at the NHacks hackathon in London Ontario. The site takes an image URL and analyze the contents of the image using artificial intelligence image processing to match it with a song. The idea came from the many memories that I can associate with specific songs. I wanted a way to match my photos with a new song. Other applications that our team had discussed if the project were to continue would include matching music with videos or presentations for commercial use. A few features that are in the process of being added include:
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end -->
+      <div class="section-call-to-area">
+        <div class="container">
+          <div class="row">
+            <a href="#home" class="btn-floating btn-large button-middle call-to-home section-call-to-btn animated btn-up btn-hidden" data-section="#home">
+              <i class="mdi-navigation-expand-less"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #contact Section end -->
 
-                                        
-                                            </p>
-                                            <ul>
-                                            <li>A feed of recent photo's that have been snaptracked by users</li>
-                                            <li>A means to upload and store photos from users </li>
-                                            <li>A more complex and accurate matching process</li>
-                                        </ul>
-                                        <div class="aqua-video">
-                                        <a class="aqua-video" href="http://snaptrax.org">
-                                            <img class="marks-logo" src="images/snaptrax_section.jpg"/>
-                                        </a>
-                                            <p>To visit <a href="http://snaptrax.org"> Snaptrax.org </a> click the image above.</p>
-                                            </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                <div class="row">        
-                                      <div class="col-xs-12 col-sm-8 col-sm-offset-2 animateFlipInX">
-                                        <div class="well">
-                                          <h3>Bubble</h3>
-                                          <p>Bubble is a social media app that is currently in early development. The concept cannot be disclosed though here are some photos of the User interface that I have designed.           
-                                        </p>
-                                        <div class="row">
-                                        <img class="marks-logo" src="images/Login-Page.png"/>
-                                        <img class="marks-logo" src="images/Home-Page.png"/>
-                                        <img class="marks-logo" src="images/Bubble%20Feed-1.png"/>
-                                        </div>
-                                            
-                                        </div>
-                                      </div>
-                                    </div>
-                                <div class="row">        
-                                      <div class="col-xs-12 col-sm-8 col-sm-offset-2 animateFlipInX">
-                                        <div class="well">
-                                          <h3>Geowarehouse</h3>
-                                          <p>Geowarehouse is an online application that I worked on at Teranet. It is an Angular JS based web application that provides real estate boards with access to the Ontario land registry. Users can find census and property data on every plot in Ontario from a google maps based interface.          
-                                            </p>
-                                            <div class="row">
-                                                <img class="marks-logo" src="images/geowarehouse1.png"/>
-                                            </div>
-                                            <div class="row">
-                                                <img class="marks-logo" src="images/geowarehouse2.png"/>
-                                            </div>
-                                            
-                                        </div>
-                                      </div>
-                                    </div>
-							</div>
-						</div>
-					</div>
-          <!-- /Portfolio -->
-					
-					<!-- Contact -->
+    <!-- Footer Section end -->
+    <footer id="footer" class="root-sec white root-sec footer-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="clearfix footer-inner">
+              <ul class="left social-icons">
 <!--
-					<div class="bb-item" id="page-6">
-						<div class="bb-custom-side">
-							<div class="bb-custom-container">
-								<h1 class="text-center"><span class="page-heading">Contact</span></h1>
-								<div class="row">
-									<div class="col-sm-6">
-										<form class="form-horizontal" method="post">
-										  <fieldset>
+                <li><a href="#" class="tooltips tooltipped facebook" data-position="top" data-delay="50" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                </li>
 -->
-                      
-											<!-- Name input-->
+                <li><a href="https://www.linkedin.com/in/chriscarnduff/" class="tooltips tooltipped linkedin" data-position="top" data-delay="50" data-tooltip="Linkdin"><i class="fa fa-linkedin"></i></a>
+                </li>
 <!--
-											<div class="form-group">
-											  <label class="col-md-3 control-label" for="name">Name</label>
-											  <div class="col-md-9">
-												<input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-											  </div>
-											</div>
+                <li><a href="#" class="tooltips tooltipped twitter" data-position="top" data-delay="50" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                </li>
 -->
-									
-											<!-- Email input-->
 <!--
-											<div class="form-group">
-											  <label class="col-md-3 control-label" for="email">Your E-mail</label>
-											  <div class="col-md-9">
-												<input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-											  </div>
-											</div>
+                <li><a href="#" class="tooltips tooltipped google-plus" data-position="top" data-delay="50" data-tooltip="Google Plus"><i class="fa fa-google-plus"></i></a>
+                </li>
 -->
-									
-											<!-- Message body -->
 <!--
-											<div class="form-group">
-											  <label class="col-md-3 control-label" for="message">Your message</label>
-											  <div class="col-md-9">
-												<textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-											  </div>
-											</div>
+                <li><a href="#" class="tooltips tooltipped dribbble" data-position="top" data-delay="50" data-tooltip="Dribbble"><i class="fa fa-dribbble"></i></a>
+                </li>
 -->
-									
-											<!-- Form actions -->
 <!--
-											<div class="form-group">
-											  <div class="col-md-12 text-right">
-												<button type="submit" class="btn btn-success btn-lg">Submit</button>
-											  </div>
-											</div>
-										  </fieldset>
-										</form>
-									</div>
-									<div class="col-sm-6">
-										<div id="contact-map"></div>
-										<address class="pull-right">
-											<strong>Twitter, Inc.</strong><br>
-											795 Folsom Ave, Suite 600<br>
-											San Francisco, CA 94107<br>
-											<abbr title="Phone">P:</abbr> (123) 456-7890
-										</address>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                <li><a href="#" class="tooltips tooltipped behance" data-position="top" data-delay="50" data-tooltip="Behance"><i class="fa fa-behance"></i></a>
+                </li>
 -->
-					<!-- /Contact -->
-				</div>
+              </ul> <!-- ./social icons end -->
+              <div class="right copyright">
+                <p>Chris Carnduff &copy; All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- ./container end-->
+    </footer>
+    <!-- #footer end -->
 
-				<!-- Bottom navigation buttons, hidden in extra small mode -->
-				<nav class="hidden-xs">
-					<a href="#" class="bb-nav-prev"><i class="fa fa-angle-left"></i></a>
-					<a href="#" class="bb-nav-next"><i class="fa fa-angle-right"></i></a>
-				</nav>
-				<!-- /Bottom navigation buttons -->
-			</div>
-		</div><!-- /container -->
-		
-    <!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-    
-    <!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-    
-    <!-- Other JavaScript -->
-    <script src="js/theme.js" type="text/javascript"></script>
-		<script src="js/jquery.bookblock.js" type="text/javascript"></script>
-		<script src="js/bootstrap-progressbar.min.js" type="text/javascript"></script>
-		<script src="js/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
-		<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript" ></script>
-		<script src="js/gmaps.js" type="text/javascript"></script>
-		<script>
-			Page.init();
-      
-    </script>
-		
-		</div>
-	</body>
+  </main>
+  <!-- Main Container end-->
+
+
+  <!-- JavaScripts -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/detectmobilebrowser.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="assets/js/gmaps.js"></script>
+  <script src="assets/libs/owl-carousel/owl.carousel.min.js"></script>
+  <script src="assets/libs/materialize/js/materialize.min.js"></script>
+  <script src="assets/libs/jwplayer/jwplayer.js"></script>
+  <script src="assets/libs/sweetalert/sweet-alert.min.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
