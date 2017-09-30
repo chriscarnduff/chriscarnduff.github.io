@@ -1,5 +1,5 @@
 .brand-text {
-    color: #E74C3C !important;
+    color: #191919 !important;
 }
 
 .brand-text i {
@@ -8,7 +8,7 @@
 
 .brand-bg,
 .sweet-alert button {
-    background-color: #E74C3C !important;
+    background-color: #191919 !important;
 }
 
 .waves-effect.waves-brand  {
@@ -16,24 +16,24 @@
 }
 
 .p-overlay {
-    background-color: rgba(0, 188, 212, 0.9);
+    background-color: #191919;
 }
 
 
 .circle-loader .path {
-    stroke: #E74C3C;
+    stroke: #191919;
 }
 
 
 .side-nav  li.current a,
 .side-nav  li a:hover {
-    border-bottom-color: #E74C3C;
+    border-bottom-color: #191919;
 }
 
 .static-menu li i:hover,
 .static-menu li a:hover,
 .submenu-ul li a:hover,
-.home-title span,
+
 .about-subtitle,
 .person-about > a.btn-large,
 .about-social ul li a i,
@@ -44,7 +44,11 @@
 .share-post li a:hover,
 .com-title a,
 span.num {
-    color: #E74C3C;
+    color: #191919;
+}
+
+.home-title span {
+    color: #ffffff;
 }
 
 .singel-hr-inner,
@@ -57,42 +61,43 @@ span.num {
 .contact-form .submit-btn:focus,
 a.tags,
 .blog-inner .card-content a.right:active {
-    background-color: #E74C3C;
+    background-color: #191919;
 }
 
 .contact-form .materialize-textarea:focus,
 .contact-form .input-box:focus {
-    border-color: #E74C3C;
-    box-shadow: 0px 1px 0px #E74C3C;
+    border-color: #191919;
+    box-shadow: 0px 1px 0px #191919
+        ;
 }
 
 
 .single-post-content blockquote {
-    border-left: 5px solid #E74C3C;
+    border-left: 5px solid #191919;
 }
 
 
 
 @-webkit-keyframes color {
-    0%   {stroke: #E74C3C;}
-    20%  {stroke: #E74C3C;}
-    25%  {stroke: #E74C3C;}
-    45%  {stroke: #E74C3C;}
-    50%  {stroke: #E74C3C;}
-    70%  {stroke: #E74C3C;}
-    75%  {stroke: #E74C3C;}
-    95%  {stroke: #E74C3C;}
+    0%   {stroke: #191919;}
+    20%  {stroke: #191919;}
+    25%  {stroke: #191919;}
+    45%  {stroke: #191919;}
+    50%  {stroke: #191919;}
+    70%  {stroke: #191919;}
+    75%  {stroke: #191919;}
+    95%  {stroke: #191919;}
 }
 
 @keyframes color {
-    0%   {stroke: #E74C3C;}
-    20%  {stroke: #E74C3C;}
-    25%  {stroke: #E74C3C;}
-    45%  {stroke: #E74C3C;}
-    50%  {stroke: #E74C3C;}
-    70%  {stroke: #E74C3C;}
-    75%  {stroke: #E74C3C;}
-    95%  {stroke: #E74C3C;}
+    0%   {stroke: #191919;}
+    20%  {stroke: #191919;}
+    25%  {stroke: #191919;}
+    45%  {stroke: #191919;}
+    50%  {stroke: #191919;}
+    70%  {stroke: #191919;}
+    75%  {stroke: #191919;}
+    95%  {stroke: #191919;}
 }
 
 
@@ -102,6 +107,6 @@ a.tags,
 
 
 .menu-select [type="radio"]:checked + label:after {
-    border-color: #E74C3C;
-    background-color: #E74C3C;
+    border-color: #191919;
+    background-color: #191919;
 }
