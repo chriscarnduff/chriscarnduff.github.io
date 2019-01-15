@@ -171,7 +171,7 @@
 .heading-3 {
   margin-top: 7px;
   margin-bottom: 0px;
-  padding-left: 0px;
+  padding-left: 14px;
   color: #fff;
   font-size: 28px;
 }
@@ -473,7 +473,7 @@
 }
 
 .bold-text {
-  color: #adadad;
+  color: #777;
   font-size: 17px;
 }
 
